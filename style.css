@@ -1,0 +1,117 @@
+/**
+ * file: style.css
+ * purpose: effects ...
+ **/
+
+@keyframes ballade {
+    from {
+        background-color: red;
+        width: 0%;
+    }
+    to {
+        background-color: yellow;
+        width: 100%;
+    }
+}
+
+@keyframes ballade1 {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+        opacity: 0;
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes ballade2 {
+    0% {
+        background-color: black;
+    }
+    50% {
+        background-color: white;
+        transform: scale(2);
+    }
+    100% {
+        background-color: transparent;
+    }
+}
+
+@keyframes ballade3 {
+    0% {
+        background-color: blue;
+    }
+    25% {
+        background-color: green;
+    }
+    50% {
+        background-color: yellow;
+    }
+    75% {
+        background-color: red;
+    }
+    100% {
+        background-color: blue;
+    }
+}
+
+body {
+    animation-name: ballade3;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+article {
+    width: 80%;
+}
+
+h1 {
+    font-size: 2rem;
+    animation-name: ballade2;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.art1 {
+    font-size: 1.3rem;
+    animation-name: ballade;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.art2 {
+    font-family: arial;
+}
+
+.billede {
+    border-style: dotted;
+    border-color: green;
+    animation-name: ballade1;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform-origin: bottom right;
+}
+
+.nah {
+    font-size: georgia;
+}
+
+.blah {
+    font-family: times;
+}
+
+#billedetekst {
+    color: red;
+}
+
+#first {
+    width: 60%;
+    margin: auto;
+}
